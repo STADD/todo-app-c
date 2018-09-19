@@ -54,6 +54,20 @@ void delTask(char** argv)
 {
     if(!strcmp(argv[1], "-r")) {
         FILE *file;
-        file= fopen("todo.txt", "w");
+        file= fopen("todo.txt", "r");
+        char printLine[100];
+        int temp = 0;
+        int index = 1;
+
+        while(fgets(printLine, 100, file) != NULL) {
+            printf("%d ---- %s", temp, printLine);
+            temp++;
+        }
+
+        if(temp == index){
+            remove(printLine[0]);
+        }
+
+
     }
 }
