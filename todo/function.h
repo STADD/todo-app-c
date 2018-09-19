@@ -6,6 +6,6 @@
 
 void printUsage();
 void listTask(char** argv);
-
+void addTask(char** argv);
 
 #endif // FUNCTION_H_INCLUDED
