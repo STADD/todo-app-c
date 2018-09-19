@@ -1,8 +1,10 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "function.h"
 
-int main()
+int main(int argc, char** argv)
 {
-    printf("Hello world!\n");
+
+    listTask(argv);
+   // printUsage();
+
     return 0;
 }
